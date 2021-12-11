@@ -245,7 +245,7 @@ namespace BankApplication
             {
                 if (x.acctBalance < amount + 1000)
                 {
-                    Console.WriteLine("Transfer Failed!\nInsufficient funds\n");
+                    Console.WriteLine("Transfer Failed!\nInsufficient funds in the account\n");
                     var result = Tuple.Create(0.0, 0.0);
                     return result;
                 }
